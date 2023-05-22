@@ -1,0 +1,185 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "adeptivity-gray-light",
+          "color": "#e2e2e2",
+          "name": "Adeptivity Gray Light"
+        }
+      ],
+      "background": false,
+      "text": false,
+      "link": false,
+      "custom": false,
+      "defaultGradients": false
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Rubik, sans-serif",
+          "slug": "u-rubik",
+          "name": "Understand Rubik"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.75rem",
+          "name": "Small"
+        },
+        {
+          "slug": "medium",
+          "size": "1.25rem",
+          "name": "Medium"
+        },
+        {
+          "slug": "large",
+          "size": "2.25rem",
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "3rem",
+          "name": "Extra Large"
+        },
+        {
+          "slug": "gigantic",
+          "size": "3.75rem",
+          "name": "Gigantic"
+        }
+      ],
+      "lineHeight": true,
+      "dropCap": true,
+      "fontWeight": true,
+      "fontStyle": true,
+      "textTransform": true,
+      "letterSpacing": true,
+      "textDecoration": true
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1100px"
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "units": [
+        "px",
+        "rem",
+        "vh",
+        "vw",
+        "%"
+      ],
+      "blockGap": true
+    },
+    "blocks": {
+      "core/preformatted": {
+        "typography": {
+          "fontSizes": [],
+          "customFontSize": false
+        }
+      },
+      "core/site-title": {
+        "color": {
+          "defaultPalette": true,
+          "palette": [
+            {
+              "slug": "u-primary",
+              "color": "#ef4444",
+              "name": "Understand Primary"
+            }
+          ],
+          "link": true,
+          "custom": true,
+          "gradients": [],
+          "customGradient": false
+        },
+        "typography": {
+          "fontFamilies": [
+            {
+              "fontFamily": "Pacifico, sans-serif",
+              "slug": "u-pacifico",
+              "name": "Understand Pacifico"
+            }
+          ]
+        }
+      },
+      "core/cover": {
+        "color": {
+          "duotone": [],
+          "customDuotone": false
+        }
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--u-gray-700)",
+      "background": "var(--wp--preset--color--u-white)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--u-rubik)",
+      "fontSize": "16px",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "lineHeight": "inherit",
+      "textDecoration": "none",
+      "textTransform": "none"
+    },
+    "spacing": {
+      "margin": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px"
+      },
+      "blockGap": "4rem"
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--u-pacifico)"
+        }
+      },
+      "core/button": {
+        "color": {
+          "gradient": "var(--wp--preset--gradient--u-summer-dog)"
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "width": "2px",
+          "radius": "10px",
+          "style": "solid",
+          "color": "var(--wp--preset--color--u-primary)"
+        }
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--u-primary)"
+        }
+      }
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "full-width-page",
+      "title": "Full Width Page",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}
