@@ -1,0 +1,29 @@
+{
+    "name": "kia/understand-plus",
+    "authors": [
+        {
+            "name": "Meysam Kia",
+            "email": "msmkia@outlook.com"
+        }
+    ],
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Adeptivity\\": "includes"
+        }    
+    }
+}

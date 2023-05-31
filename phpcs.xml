@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<ruleset name="CS">
+	<description>Custom coding standards.</description>
+	<config name="testVersion" value="5.6-"/>
+	<exclude-pattern>\.codeception/*</exclude-pattern>
+	<exclude-pattern>\.github/*</exclude-pattern>
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>node_modues/*</exclude-pattern>
+	<exclude-pattern>\.idea/*</exclude-pattern>
+	<exclude-pattern>assets/*</exclude-pattern>
+
+	<arg value="ps"/>
+	<arg name="colors"/>
+	<arg name="parallel" value="100"/>
+	<arg name="extensions" value="php"/>
+	<arg name="cache" value=".phpcs.cache"/>
+
+	<rule ref="WordPress">
+		<!-- PSR4 
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+		-->
+		
+	</rule>
+
+	<!-- 
+	PHPCompatibility
+	<rule ref="PHPCompatibility"/>
+	-->
+
+	<rule ref="Generic.Metrics.CyclomaticComplexity">
+		<properties>
+			<property name="complexity" value="3"/>
+			<property name="absoluteComplexity" value="5"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.Metrics.NestingLevel">
+		<properties>
+			<property name="absoluteNestingLevel" value="3"/>
+		</properties>
+	</rule>
+
+	<!-- Allow short array syntax -->
+	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found"/>
+
+
+	<rule ref="Squiz.Commenting.FileComment.Missing">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.Commenting.FileComment.SpacingAfterOpen">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.Commenting.FileComment.MissingPackageTag">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing.ExtraSpaceAfterCloseParenthesis">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.Commenting.FunctionComment.Missing">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Generic.WhiteSpace.ScopeIndent.Incorrect">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.PrecisionAlignment.Found">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Generic.WhiteSpace.ScopeIndent.IncorrectExact">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Generic.Formatting.MultipleStatementAlignment.NotSameWarning">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.OpeningIndent">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.Indent">
+		<severity>0</severity>
+	</rule>
+	<rule ref="PEAR.Functions.FunctionCallSignature.CloseBracketLine">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.ArrayIndentation.ItemNotAligned">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.CommaAfterArrayItem.NoComma">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.ArrayIndentation.MultiLineArrayItemNotAligned">
+		<severity>0</severity>
+	</rule>
+	<rule ref="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen">
+		<severity>0</severity>
+	</rule>
+</ruleset>
+
